@@ -4,103 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
     <title>POKEAPI - Pocket</title>
   </head>
-  <body>
-    <template id="template">
-      <!-- TEMPLATE -->
-      <header id="nav_header" class="page__header">
-        <input type="checkbox" id="menu" />
-
-        <nav class="nav-bar">
-          <ul class="nav-bar__nav-list">
-            <li class="nav-bar__nav-item">
-              <a href="#" class="nav-bar__nav-link"> Inicio </a>
-            </li>
-            <li class="nav-bar__nav-item">
-              <a href="#" class="nav-bar__nav-link"> Alta </a>
-            </li>
-            <li class="nav-bar__nav-item">
-              <a href="/contacto.html" class="nav-bar__nav-link"> Contacto </a>
-            </li>
-            <li class="nav-bar__nav-item">
-              <a href="/nosotros.html" class="nav-bar__nav-link"> Nosotros </a>
-            </li>
-          </ul>
-        </nav>
-        <!-- nav-bar -->
-
-        <div class="search-bar">
-          <div class="search-bar__logo-container">Logo</div>
-          <form action="" class="search-bar__form-container">
-            <label for="busqueda" class="search-bar__form-label">Buscar</label>
-            <input
-              type="search"
-              class="search-bar__form-search"
-              id="busqueda"
-            />
-            <input
-              type="submit"
-              class="search-bar__form-submit"
-              value="Buscar"
-            />
-          </form>
-          <div class="search-bar__carrito-container">C</div>
-          <div class="menu-toggle">
-            <label for="menu" class="menu-toggle__label">
-              <span class="menu-toggle__top-bread"></span>
-              <span class="menu-toggle__meat"></span>
-              <span class="menu-toggle__bottom-bread"></span>
-            </label>
+    <main class="flex"></main>
+  <h1>AHHHHHHHHHHHHH</h1>
+    <template id="card">
+      <article class="card">
+        <img
+          src="./images/bg-pattern-card.svg"
+          alt="imagen header card"
+          class="card-header"
+        />
+        <div class="card-body">
+          <img
+            src="./images/image-victor.jpg"
+            alt="imagen de vitoko"
+            class="card-body-img"
+          />
+          <h1 class="card-body-title">
+            Victor charst
+            <span>26</span>
+          </h1>
+          <p class="card-body-text">London</p>
+        </div>
+        <div class="card-footer">
+          <div class="card-footer-social">
+            <h3>80K</h3>
+            <p>Ataque</p>
+          </div>
+          <div class="card-footer-social">
+            <h3>803K</h3>
+            <p>Ataque Especial</p>
+          </div>
+          <div class="card-footer-social">
+            <h3>1.4K</h3>
+            <p>Defensa</p>
           </div>
         </div>
-        <!-- search-bar -->
-      </header>
-      <!-- <header> -->
-      <main id="nav_main" class="page_main">
-        <section class="section_cards">
-          <article class="Card_pokemon">
-            <img src="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-            <button onclick="history.back()">Go back</button>
-          </article>
-          <!-- Pokemon card -->
-          <article class="contenido_map"></article>
-          <!-- Pokemon Maps -->
-          <article clase="contenido_tipo"></article>
-          <!-- Pokemon table of type -->
-          <article class="contenido_items"></article>
-          <!-- Pokemon items -->
-        </section>
-        <!-- Body de card -->
-      </main>
-      <!-- BODY -->
-      <section class="contenido">
-        <article class="Card_pokemon"></article>
-      </section>
-      <footer id="nav_footer" class="page_footer">
-        <div class="page_footer_grid">
-          <a href="page_footer_logo"> </a>
-          <p>for a better expirience</p>
-          <div class="page_footer_nav">
-            <a href="#">Twitter</a>
-            <a href="#">Github</a>
-            <a href="#">instagram</a>
-            <a href="#">correo</a>
-            <p>Contact</p>
-          </div>
-        </div>
-      </footer>
-      <!-- Footer -->
+      </article>
     </template>
+         <!-- Footer -->
+    <footer id="nav_footer" class="page_footer">
+      <div class="page_footer_grid">
+        <a href="page_footer_logo"> </a>
+        <p>for a better expirience</p>
+        <div class="page_footer_nav">
+          <a href="#">Twitter</a>
+          <a href="#">Github</a>
+          <a href="#">instagram</a>
+          <a href="#">correo</a>
+          <p>Contact</p>
+        </div>
+      </div>
+    </footer>
+  
     <script src="js/main.js"></script>
   </body>
+  
 </html>

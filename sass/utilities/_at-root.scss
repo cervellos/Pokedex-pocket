@@ -1,0 +1,17 @@
+:root {
+  --color--black: #232323;
+  --color--back-pri: #633177;
+  --color--back-sec: #ff8080;
+  --color--back-ter: #afe8a1;
+  --color--type-pri: #f1e4c6;
+  --color--ype-sec: #cd361f;
+  --color--type-tre: #692aaa;
+  --color--type-grandian: linear-gradient(
+    45deg,
+    #dc4a5e 0%,
+    #6b273b 30%,
+    #97558d 60%,
+    #6b273b 100%
+  );
+  --stroke-width: 6px;
+}
