@@ -1,0 +1,41 @@
+{{#if true}}
+  <!--TODO verificar if*/  -->
+
+  <article class="card">
+    <div class="card-body">
+      <div class="card-header__colummn">
+        <h1 class="card-body-title">
+          {{pokemon.nombre}}
+        </h1>
+        <p class="card-body.hp">{{pokemon.hp}}hp</p>
+      </div>
+      <img
+        src={{pokemon.imgCvg}}
+        alt="imagen de vitoko"
+        class="card-body-img"
+      />
+      <p class="card-body-text">{{pokemon.experiencia}}</p>
+    </div>
+    <div class="card-footer">
+      <div class="card-footer-social">
+        <h3>{{pokemon.ataque}}</h3>
+        <p>Ataque</p>
+      </div>
+      <div class="card-footer-social">
+        <h3>{{pokemon.especial}}</h3>
+        <p>Ataque Especial</p>
+      </div>
+      <div class="card-footer-social">
+        <h3>{{pokemon.defensa}}</h3>
+        <p>Defensa</p>
+      </div>
+      <div class="card-footer-social">
+        <p>Move</p>
+        <h3>{{pokemon.moveName}}</h3>
+        <p>{{pokemon.moveDes}}</p>
+      </div>
+    </div>
+  </article>
+{{else}}
+  <h2>Do not find Pokemon</h2>
+{{/if}}
