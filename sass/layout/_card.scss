@@ -1,7 +1,7 @@
 img {
   width: 200px;
   height: 200px;
-
+  z-index: 3px;
   background-color: rgba(255, 255, 255, 0);
 }
 .card {
@@ -13,6 +13,24 @@ img {
   min-height: 500px;
   max-height: 800px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+  background-image: url(../../img/old_paper-texture.jpg);
+  position: relative;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(142, 47, 206, 0.505);
+    z-index: -1;
+  }
 
   &-header__colummn {
     display: flex;
