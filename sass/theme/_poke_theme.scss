@@ -1,5 +1,5 @@
 body {
-  background-color: var(--color--back-pri);
+  background-color: var(--color--back-orange);
   width: 100%;
 }
 h1 {
@@ -7,4 +7,16 @@ h1 {
   background: var(--color--type-grandian);
   background-clip: text;
   -webkit-text-stroke: var(--stroke-width) transparent;
+  color: var(--color--white);
+}
+
+.header {
+  background-color: var(--color--back-beash);
+}
+.search-bar {
+  border: 5px yellow solid;
+  &__form-submit {
+    color: var(--color--black);
+    background-color: var(--color--back-green);
+  }
 }

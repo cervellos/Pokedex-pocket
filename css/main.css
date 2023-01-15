@@ -16,7 +16,7 @@ body {
 }
 
 body {
-  background-color: var(--color--back-pri);
+  background-color: var(--color--back-orange);
   width: 100%;
 }
 
@@ -26,16 +26,30 @@ h1 {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-stroke: var(--stroke-width) transparent;
+  color: var(--color--white);
+}
+
+.header {
+  background-color: var(--color--back-beash);
+}
+
+.search-bar {
+  border: 5px yellow solid;
+}
+.search-bar__form-submit {
+  color: var(--color--black);
+  background-color: var(--color--back-green);
 }
 
 :root {
   --color--black: #232323;
-  --color--back-pri: #633177;
-  --color--back-sec: #ff8080;
-  --color--back-ter: #afe8a1;
-  --color--type-pri: #f1e4c6;
-  --color--ype-sec: #cd361f;
-  --color--type-tre: #692aaa;
+  --color--white: #ffff;
+  --color--back-violet: #633177;
+  --color--back-orange: #f8ca67;
+  --color--back-green: #63c44b;
+  --color--back-beash: #f3dfb0;
+  --color--ball-red: #cd361f;
+  --color--button-blue: #5353d6;
   --color--type-grandian: linear-gradient(
     45deg,
     #dc4a5e 0%,

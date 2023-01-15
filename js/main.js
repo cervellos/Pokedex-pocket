@@ -39,6 +39,7 @@ const fechtData = async (id) => {
     console.log(pokemon)
 
     pintarCard(pokemon)
+    pintarList(pokemon)
   } catch (error) {
     console.log(error)
   }
@@ -52,6 +53,19 @@ const pintarCard = async (pokemon) => {
     const html = template({ pokemon })
     console.log(html)
     document.getElementsByClassName("cards-container")[0].innerHTML = html
+  } catch (err) {
+    console.error(`este error${err}`)
+  }
+}
+
+const pintarList = async (pokemon) => {
+  try {
+    const res = await fetch("templates/list-inputs.hbs")
+    const templateHbs = await res.text()
+    const template = Handlebars.compile(templateHbs)
+    const html = template({ pokemon })
+    console.log(html)
+    document.getElementsByClassName("inputs-container")[0].innerHTML = html
   } catch (err) {
     console.error(`este error${err}`)
   }
