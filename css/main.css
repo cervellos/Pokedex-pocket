@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap");
 *,
 *::before,
 *::after {
@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  font-family: "Puritan", serif;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 body {
@@ -110,4 +110,30 @@ img {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.input-container__background {
+  background-color: rosybrown;
+  width: 50%;
+  height: 250px;
+  border: 10px rgb(57, 27, 12) solid;
+}
+
+.list-inputs {
+  display: flex;
+  background-color: var(--color--back-beash);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 15px;
+  padding: 5px;
+  margin: auto;
+}
+.list-inputs__img {
+  width: 25px;
+  height: 25px;
+  padding-right: 2px;
 }/*# sourceMappingURL=main.css.map */

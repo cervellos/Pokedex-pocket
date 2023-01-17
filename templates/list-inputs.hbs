@@ -1,6 +1,15 @@
 {{#if true}}
 
-  <h2>pokemon {{pokemon.number}} {{pokemon.nombre}}</h2>
+  <div class="list-inputs">
+
+    <h2 class="list-inputs__input"><img
+        src="/img/poke-input.png"
+        alt="pokeball"
+        class="list-inputs__img"
+      />
+      {{pokemon.id}}
+      {{pokemon.nombre}}</h2>
+  </div>
 
 {{else}}
   <h2>Not conecte</h2>

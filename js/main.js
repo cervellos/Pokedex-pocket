@@ -35,6 +35,7 @@ const fechtData = async (id) => {
       especial: data1.stats[3].base_stat,
       moveName: data1.moves[0].move.name,
       moveDes: data2.effect_entries[0].effect,
+      id: data2.id,
     }
     console.log(pokemon)
 

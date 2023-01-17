@@ -1,0 +1,21 @@
+.input-container__background {
+  background-color: rosybrown;
+  width: 50%;
+  height: 250px;
+  border: 10px rgb(57, 27, 12) solid;
+}
+
+.list-inputs {
+  display: flex;
+  background-color: var(--color--back-beash);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 15px;
+  padding: 5px;
+  margin: auto;
+  &__img {
+    width: 25px;
+    height: 25px;
+    padding-right: 2px;
+  }
+}
