@@ -1,16 +1,16 @@
 {{#if true}}
+  {{#each list}}
+    <div class="list-inputs">
 
-  <div class="list-inputs">
-
-    <h2 class="list-inputs__input"><img
-        src="/img/poke-input.png"
-        alt="pokeball"
-        class="list-inputs__img"
-      />
-      {{pokemon.id}}
-      {{pokemon.nombre}}</h2>
-  </div>
-
+      <h2 class="list-inputs__input"><img
+          src="/img/poke-input.png"
+          alt="pokeball"
+          class="list-inputs__img"
+        />
+        {{math @index "+" 1}}
+        {{name}}</h2>
+    </div>
+  {{/each}}
 {{else}}
   <h2>Not conecte</h2>
 {{/if}}

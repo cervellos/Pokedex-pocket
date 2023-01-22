@@ -22,6 +22,8 @@ const fechtData = async (id) => {
     const data1 = await res1.json()
     const res2 = await fetch(data1.moves[0].move.url)
     const data2 = await res2.json()
+    const res3 = await fetch("https://pokeapi.co/api/v2/pokemon")
+    const data3 = await res3.json()
     console.log(data2)
     const pokemon = {
       img: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data1.id}.png`,
@@ -38,11 +40,28 @@ const fechtData = async (id) => {
       id: data2.id,
     }
     console.log(pokemon)
+    console.dir(data3.results)
 
+    //const pokemones = {
+    // pokemonUni:data3.[0]
+    //}
     pintarCard(pokemon)
-    pintarList(pokemon)
+    pintarList(data3.results)
   } catch (error) {
     console.log(error)
+  }
+}
+async function pintarList(list) {
+  try {
+    const res = await fetch("templates/list-inputs.hbs")
+    const templateHbs = await res.text()
+    const template = Handlebars.compile(templateHbs)
+
+    const html = template({ list })
+
+    document.getElementsByClassName("inputs-container")[0].innerHTML = html
+  } catch (error) {
+    console.error(`este error${err}`)
   }
 }
 
@@ -58,16 +77,17 @@ const pintarCard = async (pokemon) => {
     console.error(`este error${err}`)
   }
 }
-
-const pintarList = async (pokemon) => {
-  try {
-    const res = await fetch("templates/list-inputs.hbs")
-    const templateHbs = await res.text()
-    const template = Handlebars.compile(templateHbs)
-    const html = template({ pokemon })
-    console.log(html)
-    document.getElementsByClassName("inputs-container")[0].innerHTML = html
-  } catch (err) {
-    console.error(`este error${err}`)
-  }
-}
+/**HAndlebars math */
+Handlebars.registerHelper("math", function(lvalue, operator, rvalue, options) {
+  lvalue = parseFloat(lvalue);
+  rvalue = parseFloat(rvalue);
+      
+  return {
+      "+": lvalue + rvalue,
+      "-": lvalue - rvalue,
+      "*": lvalue * rvalue,
+      "/": lvalue / rvalue,
+      "%": lvalue % rvalue
+  }[operator];
+});
+/**HAndlebars math */
