@@ -133,9 +133,27 @@ img {
   border-radius: 15px;
   padding: 5px;
   margin: auto;
+  animation: scroll 48s linear infinite;
+  -webkit-animation: scroll 30s linear infinite;
 }
 .list-inputs__img {
   width: 25px;
   height: 25px;
   padding-right: 2px;
+}
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateY(-600px);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateY(-600px);
+  }
 }/*# sourceMappingURL=main.css.map */

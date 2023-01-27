@@ -15,9 +15,21 @@
   border-radius: 15px;
   padding: 5px;
   margin: auto;
+  animation: scroll 48s linear infinite;
+  -webkit-animation: scroll 30s linear infinite;
   &__img {
     width: 25px;
     height: 25px;
     padding-right: 2px;
+  }
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateY(calc(-60px * 10));
+      transform: translateY(-60px * 10);
+    }
   }
 }
